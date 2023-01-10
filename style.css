@@ -50,3 +50,18 @@ body {
   font-size: 2rem;
   margin: 1rem;
 }
+
+.header-right {
+  display: grid;
+  width: 50%;
+  justify-content: space-around;
+  gap: 0.5rem;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+}
+
+info-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
