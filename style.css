@@ -6,9 +6,14 @@
 
 body {
   margin: 0;
-  background-color: hsl(201, 27%, 45%);
+  background-color: hsla(201, 39%, 55%, 0.779);
   color: hsl(200, 100%, 10%);
   font-family: sans-serif;
+}
+
+.blurred {
+  filter: blur(5px);
+  overflow: hidden;
 }
 
 .header {
@@ -64,4 +69,73 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: hsl(200, 100%, 50%);
+}
+
+.value-sub-info {
+  font-size: 0.8rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: hsl(200, 100%, 50%);
+}
+
+.day-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.day-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: hsl(200, 100%, 10%);
+  color: hsl(200, 100%, 90%);
+  border-radius: 0.5rem;
+}
+
+.day-card:hover {
+  background-color: hsl(200, 100%, 20%);
+}
+
+.day-card-day {
+  font-size: 0.75rem;
+  color: rgb(206, 198, 52);
+  margin-top: 0.5rem;
+}
+
+.hour-section {
+  width: 100%;
+  text-align: center;
+  border-spacing: 0;
+  padding: 3rem 0rem;
+  color: antiquewhite;
+}
+
+.hour-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.hour-row:nth-child(odd) {
+  background-color: hsl(200, 60%, 10%);
+}
+
+.hour-row:nth-child(even) {
+  background-color: hsl(200, 60%, 30%);
+}
+
+.hour-row > td {
+  padding: 0.5rem 0.5rem;
 }
